@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width">
+<title>Responsive HTML Tables</title>
+<link href="../css/global-demo.css" rel="stylesheet" />
+<link href='http://fonts.googleapis.com/css?family=Oswald:300,400,700' rel='stylesheet' type='text/css'>
+<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet" type="text/css">
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<style type="text/css">
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: url(../images/noise_light-grey.jpg);
+	font-family: 'Helvetica Neue', arial, sans-serif;
+	font-weight: 300;
+}
+
+h1 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 4em;
+	font-weight: 400;
+	margin: 0 0 20px;
+	text-align: center;
+	text-shadow: 1px 1px 0 #fff, 2px 2px 0 #bbb;
+}
+h2 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 2em;
+	font-weight: 700;
+	letter-spacing: -1px;
+	margin: 0 0 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+hr {
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #fff;
+	margin: 25px 0;
+	clear: both;
+}
+.centered {
+	text-align: center;
+}
+.wrapper {
+	width: 100%;
+	padding: 30px 0;
+}
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+.table-container {
+	padding: 20px;
+	margin: 0 0 20px;
+	background: #fff;
+	box-shadow: 0 0 5px #ddd;
+}
+/* responsive tables */
+.responsive-stacked-table {
+	width: 100%;
+	border: 1px solid #ddd;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+.responsive-stacked-table th,
+.responsive-stacked-table td {
+	padding: 10px;
+	border-top: 1px solid #ddd;
+}
+.responsive-stacked-table thead {
+	background: #eee;
+	border-bottom: 3px solid #ddd;
+}
+.responsive-stacked-table tr:nth-child(even) {
+	background: #f5f5f5;
+}
+.responsive-stacked-table .fa {
+	margin-right: 5px;
+}
+.responsive-stacked-table .fa-check-circle {
+	color: #690;
+}
+.responsive-stacked-table .fa-times-circle {
+	color: #c00;
+}
+
+.responsive-stacked-table.with-mobile-labels {
+	font-size: .85em;
+}
+
+@media (max-width: 1199px) {
+	.container {
+		width: auto;
+		padding: 0 10px;
+	}
+}
+
+@media (max-width: 767px) {
+	.responsive-stacked-table thead {
+		display: none;
+	}
+	.responsive-stacked-table tr,
+	.responsive-stacked-table th,
+	.responsive-stacked-table td {
+		display: block;
+	}
+	.responsive-stacked-table td {
+		border-top: none;
+	}
+	.responsive-stacked-table tr td:first-child {
+		border-top: 1px solid #ddd;
+		font-weight: bold;
+	}
+	.responsive-stacked-table.with-mobile-labels tr td:first-child {
+		font-weight: 300;
+	}
+	.responsive-stacked-table.with-mobile-labels td:before {
+		display: block;
+		font-weight: bold;
+	}
+	.responsive-stacked-table.with-mobile-labels td:nth-of-type(1):before {
+		content: "Product:";
+	}
+	.responsive-stacked-table.with-mobile-labels td:nth-of-type(2):before {
+		content: "Processor:";
+	}
+	.responsive-stacked-table.with-mobile-labels td:nth-of-type(3):before {
+		content: "Memory:";
+	}
+	.responsive-stacked-table.with-mobile-labels td:nth-of-type(4):before {
+		content: "Hard Drive:";
+	}
+	.responsive-stacked-table.with-mobile-labels td:nth-of-type(5):before {
+		content: "Graphics Card:";
+	}
+}
+</style>
+</head>
+
+<body>
+
+<div class="global-header">
+	<div class="container">
+	<!--/	<p class="brand"><a href="/">Ali<strong>Jafarian</strong></a></p> -->
+		<p class="back-to-article"><a href="/">Back to Home &rsaquo;</a></p>
+	</div>
+</div>
+<!--/.global-header-->
+
+<div class="wrapper">
+	<div class="container">
+		<h1>Contest!</h1>
+		
+		<div class="table-container">
+			<h2>Maroon 5 <p></p>	<p><font size="5"> Aug 15</font></p>
+		</h2>
+			<table class="responsive-stacked-table">
+				<thead>
+					<tr>
+						<th>Who</th>
+						<th>Number</th>
+						<th>When</th>
+						<th>What</th>
+						<th>How</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td> <a href="http://www.b104.com/contests//"><img src="http://www.giveapint.org/wp-content/uploads/2013/12/B104-logo-300x231.jpg" style="width:100px;height:50px;"</a>
+						</td>
+						
+						<td>302-242-4242</td>
+						<td>Daily at 9am</td>
+						<td></i> Win 4 VIP tickets</td>
+						<td></i> Text the keyword MAROON to 33998</td>
+					</tr>
+					<tr>
+						<td><a href="http://www.hot995.com/contests/"><img src="http://www.fundsforcauses.com/_includes/images/products/Hot%20995%20Pic.png" style="width:100px;height:50px;"</a></td>
+						<td>202-242-4332</td>
+						<td>Sundays at 10am</td>
+						<td></i> Win a pair of front row seats</td>
+						<td></i> Be the 20th caller!</td>
+					</tr>
+					<tr>
+						<td><a href="http://www.key103.co.uk/win/"><img src="http://www.manchesterphoenix.co.uk/img/676/1000/700/-/1252525876/key-103-logo.jpeg" style="width:100px;height:50px;"</a></td>
+						<td>835-242-4233</td>
+						<td>Every Saturday on the hour</td>
+						<td></i>Win a pair of VIP including meeting Adam!</td>
+						<td></i> Play Finish These Lyrics</td>
+					</tr>
+					<tr>
+						<td><a href="http://www.dcs1073.com/category/contests/"><img src="http://radioedit.iheart.com/service/img/nop()/assets/images/5376.png" style="width:100px;height:50px;"</a></td>
+						<td>301-242-2421</td>
+						<td>Daily at 7pm</td>
+						<td></i>Win a pair of tickets</td>
+						<td></i> Guess the #1 hit single of the day</td>
+					</tr>
+					<tr>
+					<td><a href="http://www.z100.com/contests/"><img src="http://iscale.iheart.com/catalog/live/1469?ops=fit(240%2C240)" style="width:100px;height:50px;"</a></td>
+						<td> 472-231-3241</td>
+						<td>Daily at 9am</td>
+						<td></i>Win VIP tickets including meeting Adam </td>
+						<td></i> Be the 5th caller</td>
+					</tr>
+					</tbody>
+			</table>
+		</div>
+		<!--/.table-container-->
+		
+		<!--
+		<div class="table-container">
+			<h2>Stacked Tables with Mobile Labels</h2>
+			<table class="responsive-stacked-table with-mobile-labels">
+				<thead>
+					<tr>
+						<th>Product</th>
+						<th>Processor</th>
+						<th>Memory</th>
+						<th>Hard Drive</th>
+						<th>Graphics Card</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Macbook Air 11"</td>
+						<td>1.4GHz dual-core Intel Core i5</td>
+						<td>4GB</td>
+						<td>128GB Flash storage</td>
+						<td>Intel HD Graphics 5000</td>
+					</tr>
+					<tr>
+						<td>Macbook Air 13"</td>
+						<td>1.4GHz dual-core Intel Core i5</td>
+						<td>4GB</td>
+						<td>128GB Flash storage</td>
+						<td>Intel HD Graphics 5000</td>
+					</tr>
+					<tr>
+						<td>Macbook Pro 13"</td>
+						<td>2.6GHz dual-core Intel Core i5</td>
+						<td>8GB</td>
+						<td>128GB Flash storage</td>
+						<td>Intel Iris Graphics</td>
+					</tr>
+					<tr>
+						<td>Macbook Pro 15"</td>
+						<td>2.2GHz quad-core Intel Core i7</td>
+						<td>16GB</td>
+						<td>256GB Flash storage</td>
+						<td>Intel Iris Pro Graphics</td>
+					</tr>
+					<tr>
+						<td>iMac 21.5"</td>
+						<td>1.4GHz dual-core Intel Core i5</td>
+						<td>8GB</td>
+						<td>500GB</td>
+						<td>Intel HD Graphics 5000</td>
+					</tr>
+					<tr>
+						<td>iMac 27"</td>
+						<td>3.2GHz quad-core Intel Core i5</td>
+						<td>8GB</td>
+						<td>1TB</td>
+						<td>NVIDIA GeForce GT 755M with 1GB video memory</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!--/.table-container-->
+		
+		<!--<p class="centered">Demo by <a href="">Ali Jafarian</a></p>
+	</div>
+	<!--/.container-->
+</div>
+<!--/.wrapper-->
+
+
+</body>
+</html>
